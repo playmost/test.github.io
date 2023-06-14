@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600></canvas>
+      <canvas id="unity-canvas" width=584 height=1266></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -56,11 +56,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/web2.loader.js";
+      var loaderUrl = buildUrl + "/web3.loader.js";
       var config = {
-        dataUrl: buildUrl + "/web2.data.br",
-        frameworkUrl: buildUrl + "/web2.framework.js.br",
-        codeUrl: buildUrl + "/web2.wasm.br",
+        dataUrl: buildUrl + "/web3.data",
+        frameworkUrl: buildUrl + "/web3.framework.js",
+        codeUrl: buildUrl + "/web3.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "PlayMost",
         productName: "Get in Line",
@@ -91,8 +91,8 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "960px";
-        canvas.style.height = "600px";
+        canvas.style.width = "584px";
+        canvas.style.height = "1266px";
       }
 
       loadingBar.style.display = "block";
