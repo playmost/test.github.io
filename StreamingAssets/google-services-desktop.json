@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "1025770994851",
+    "project_id": "get-in-line-ac45d",
+    "storage_bucket": "get-in-line-ac45d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1025770994851:android:eea4e11dcfcd6a80991316",
+        "android_client_info": {
+          "package_name": "com.playmost.getinline"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1025770994851-sg8fd8lq16ermha74c9g05n1olsg297e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-S7rpWgBzN7spp-up-BXGj2rdiVGMOMA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1025770994851-sg8fd8lq16ermha74c9g05n1olsg297e.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1025770994851-47lt4m0oo9c9vsj8eaje1tq6phi7a8ac.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.playmost.getinline"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
