@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
+      <canvas id="unity-canvas" width=292 height=633></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -24,7 +24,6 @@
       </div>
     </div>
     <script>
-
       var container = document.querySelector("#unity-container");
       var canvas = document.querySelector("#unity-canvas");
       var loadingBar = document.querySelector("#unity-loading-bar");
@@ -57,11 +56,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/web5.loader.js";
+      var loaderUrl = buildUrl + "/web4.loader.js";
       var config = {
-        dataUrl: buildUrl + "/web5.data.br",
-        frameworkUrl: buildUrl + "/web5.framework.js.br",
-        codeUrl: buildUrl + "/web5.wasm.br",
+        dataUrl: buildUrl + "/web4.data",
+        frameworkUrl: buildUrl + "/web4.framework.js",
+        codeUrl: buildUrl + "/web4.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "PlayMost",
         productName: "Get in Line",
@@ -89,13 +88,11 @@
         // To lower canvas resolution on mobile devices to gain some
         // performance, uncomment the following line:
         // config.devicePixelRatio = 1;
-
-
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "960px";
-        canvas.style.height = "600px";
+        canvas.style.width = "292px";
+        canvas.style.height = "633px";
       }
 
       loadingBar.style.display = "block";
@@ -105,18 +102,16 @@
       script.onload = () => {
         createUnityInstance(canvas, config, (progress) => {
           progressBarFull.style.width = 100 * progress + "%";
-              }).then((unityInstance) => {
-                loadingBar.style.display = "none";
-                fullscreenButton.onclick = () => {
-                  unityInstance.SetFullscreen(1);
-                };
-              }).catch((message) => {
-                alert(message);
-              });
-            };
-
+        }).then((unityInstance) => {
+          loadingBar.style.display = "none";
+          fullscreenButton.onclick = () => {
+            unityInstance.SetFullscreen(1);
+          };
+        }).catch((message) => {
+          alert(message);
+        });
+      };
       document.body.appendChild(script);
-
     </script>
   </body>
 </html>
