@@ -17,5 +17,5 @@ window.mapDataName = "custommapdeneme";
 window.aisOnMinimap = false;
 window.introEnabled = true;
 window.levelWaitingEnabled = true;
-window.numberOfAI = 10;
+window.numberOfAI = 89;
 window.autoControl = false;
