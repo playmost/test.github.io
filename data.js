@@ -17,5 +17,5 @@ window.mapDataName = "map_08August";
 window.aisOnMinimap = false;
 window.introEnabled = true;
 window.levelWaitingEnabled = true;
-window.numberOfAI = 75;
+window.numberOfAI = 65;
 window.autoControl = false;
