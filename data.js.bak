@@ -11,11 +11,11 @@ window.aiLevelUpData = {
  * data interval değeri ikisi içinde geçerli
  * diğer değerler sadece playera göre olanda geçerli
  */
-window.aiLevelUpType = 1; // 0: playera göre, 1: standart
+window.aiLevelUpType = 0; // 0: playera göre, 1: standart
 
 window.mapDataName = "custommapdeneme";
-window.aisOnMinimap = false;
+
 window.introEnabled = true;
 window.levelWaitingEnabled = true;
-window.numberOfAI = 69;
-window.autoControl = false;
+window.numberOfAI = 60;
+window.autoControl = true;

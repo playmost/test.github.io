@@ -13,9 +13,9 @@ window.aiLevelUpData = {
  */
 window.aiLevelUpType = 1; // 0: playera göre, 1: standart
 
-window.mapDataName = "custommapdeneme";
+window.mapDataName = "map_08August";
 window.aisOnMinimap = false;
 window.introEnabled = true;
 window.levelWaitingEnabled = true;
-window.numberOfAI = 59;
+window.numberOfAI = 75;
 window.autoControl = false;
